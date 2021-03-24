@@ -7,12 +7,21 @@ services:
     volumes:
       - ./api/:/app/
     ports:
-      - "3050:3050"
-  app:
-    build:
-      context: ./app
-      dockerfile: Dockerfile.dev
-    volumes:
-      - ./app/:/usr/share/nginx/html/
-    ports:
       - "80:80"
+
+  # app:
+  #   build:
+  #     context: ./app
+  #     dockerfile: Dockerfile.dev
+  #   volumes:
+  #     - ./app/:/usr/share/nginx/html/
+  #   ports:
+  #     - "80:80"
+
+  # router:
+  #   build:
+  #     context: ./router
+  #   ports:
+  #     - '80:80'
+  #     - '443:443'
+  #   restart: unless-stopped      

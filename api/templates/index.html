@@ -38,6 +38,7 @@
             },
             onApprove: function (data, actions) {
                 alert('You have successfully created subscription ' + data.subscriptionID); // Optional message given to subscriber
+                console.log(data);
             }
         }).render('#paypal-button-container'); // Renders the PayPal button   
     </script>

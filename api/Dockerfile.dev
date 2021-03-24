@@ -30,4 +30,4 @@ WORKDIR /app/
 COPY ./ ./
 
 #Start server
-CMD ["uvicorn", "--reload", "--host", "0.0.0.0", "--port", "3050", "main:app"]
+CMD ["uvicorn", "--reload", "--host", "0.0.0.0", "--port", "80", "main:app"]
